@@ -1,0 +1,21 @@
+[workspace]
+
+members = [
+    "utils/ws_continuation_buffer",
+    "utils/test_helpers",
+
+    # cli tools
+    "cli_tools/jsonc_to_json",
+
+    # Rust Arbitrage part
+    "string_to_int_mapper",
+    "crypto_exchange_path_finder", # TODO feature for wasm but we want to hide logic
+    "crypto_exchange_types",
+    "crypto_serializer",
+    "crypto_network_utility", # CLI Desktop
+    "shm_mem_ipc", # Desktop dll
+]
+
+exclude = []
+
+default-members = ["crypto_network_utility"]

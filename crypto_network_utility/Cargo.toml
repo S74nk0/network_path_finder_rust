@@ -1,0 +1,21 @@
+[package]
+name = "crypto_network_utility"
+version = "0.2.0"
+authors = ["S74nk0 <krsticch@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = { version = "1.0", default-features = true }
+crypto_exchange_types = {path = "../crypto_exchange_types"}
+crypto_exchange_path_finder = {path = "../crypto_exchange_path_finder"}
+crypto_serializer = {path = "../crypto_serializer"}
+string_to_int_mapper = {path = "../string_to_int_mapper"}
+serde = { version = "1.0.106", features = ["derive"] }
+serde_json = "1.0"
+clap = { version = "4.1.13", features = ["derive"] }
+colored = "1.9.3"
+indicatif = "0.14.0"
+thiserror = "1.0.39"
+itertools = "0.10.5"
